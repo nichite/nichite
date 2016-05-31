@@ -10,8 +10,12 @@ body {
   color: #404040;
 }
 p {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  color: #999;
+  font-size: 16px;
   margin: 30px 0;
+  font-weight: 100;
 }
 p a {
   text-decoration: underline;
@@ -23,9 +27,17 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 100;
+  color: #999;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 50;
+  letter-spacing: 3px;
 }
 a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
   color: #404040;
 }
 a:hover,
@@ -55,13 +67,14 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -69,12 +82,12 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #999;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(50, 50, 50, 0.8);
   }
   .navbar-custom .nav li a {
     color: white;
@@ -140,7 +153,6 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -152,7 +164,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .intro-header .site-heading,
@@ -390,6 +402,30 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
+.image-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.project-image {
+  height: 200px;
+  width: 250px;
+  margin: 20px 0;
+  border-radius: 5%;
+}
+
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+
+.subheading {
+  color: #999;
+}
+
+.project-link {
+  margin-left: 20px;
+}
+
+.project-info {
+  margin-left: 20px;
 }
