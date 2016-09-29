@@ -12,7 +12,7 @@
     <title>Nic Hite</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
@@ -34,75 +34,80 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Nicolas Hite</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#" style="color:#999">Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Nicolas Hite</a>
         </div>
-        <!-- /.container -->
-    </nav>
+      </nav>
+    </div>
+
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background: #FFF">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <img src="img/self.jpg" class="image-circle"/>
                         <span class="subheading">I write code sometimes.</span>
                     </div>
-                </div>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <div class="projects-container container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h1>PROJECTS</h1>
-                <hr>
-                <div class="project-container row">
-                  <div class="col-md-4">
-                    <img src="img/squanchify.png" class="project-image">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="project-info">
-                      <h2 class="project-header">Squanchify</h2>
-                      <p>A fun little Chrome extension that rifles through your
-                      web pages and randomly replaces words with the correct form
-                      of the word "squanch."</p>
-                      <p>15,000+ total downloads</p>
-                      <span>
-                        <a class="project-link" href="https://github.com/nichite/squanchify">View on Github</a>
-                        <a class="project-link" href="https://chrome.google.com/webstore/detail/squanchify/kbmlldlmbfcejlgflijfedcbncnpbbjj?hl=en-US">View in Chrome Web Store</a>
-                    </div>
-                  </div>
-                </div>
+    <div class="projects-container container-fluid">
+      <h1>PROJECTS</h1>
+      <div class="projects">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="project-container card" project="squanchify">
+            <img src="img/squanchify.png" class="project-image card-img-top">
+            <div class="card-block">
+              <div class="project-info">
+                <h2 class="project-header">Squanchify</h2>
+                <h4 class="project-type">JavaScript<h4>
+              </div>
+              <p class="card-text">A fun little Chrome extension that rifles through your
+              web pages and randomly replaces words with the correct form
+              of the word "squanch."</p>
+              <span class="remark">15,000+ downloads from <a class="project-link" href="https://chrome.google.com/webstore/detail/squanchify/kbmlldlmbfcejlgflijfedcbncnpbbjj?hl=en-US">Chrome Web Store</a></span>
             </div>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="project-container card" project="bash-cta">
+            <img src="img/bash-cta.png" class="project-image card-img-top">
+            <div class="card-block">
+              <div class="project-info">
+                <h2 class="project-header">Bash CTA</h2>
+                <h4 class="project-type">Bash</h4>
+              </div>
+              <p class="card-text">A Chicago CTA train tracker for the command line, written entirely
+                                   in Bash.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="project-container card" project="chill-out-windows-10">
+            <img src="img/windows-10.jpg" class="project-image card-img-top">
+            <div class="card-block">
+              <div class="project-info">
+                <h2 class="project-header">Chill Out, Windows 10</h2>
+                <h4 class="project-type">Powershell</h4>
+              </div>
+              <p class="card-text">A Powershell script that removes some of W10's
+                                   more unchill components.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <hr>
@@ -144,14 +149,13 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+<!-- Homemade JS -->
+<script src="js/main.js"></script>
+<script src="js/sticky_nav.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
 
 </body>
 

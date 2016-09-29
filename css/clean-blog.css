@@ -14,8 +14,9 @@ p {
   line-height: 1.5;
   color: #999;
   font-size: 16px;
-  margin: 30px 0;
+  margin: 10px 0;
   font-weight: 100;
+  text-align: justify;
 }
 p a {
   text-decoration: underline;
@@ -59,16 +60,19 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 .navbar-custom .navbar-brand {
   font-weight: 100;
   letter-spacing: 2px;
+  padding: 0;
+  color: #999;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -76,15 +80,17 @@ hr.small {
   font-weight: 100;
   letter-spacing: 2px;
 }
+
+
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
     border-bottom: 1px solid transparent;
   }
-  .navbar-custom .navbar-brand {
+  .navbar-custom {
     color: #999;
-    padding: 20px;
+    padding: 10px 20px 10px 20px;
   }
+
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(50, 50, 50, 0.8);
@@ -98,53 +104,7 @@ hr.small {
     color: rgba(255, 255, 255, 0.8);
   }
 }
-@media only screen and (min-width: 1170px) {
-  .navbar-custom {
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .navbar-custom.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
-    position: fixed;
-    top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-  }
-  .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .navbar-brand:hover,
-  .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
-  }
-  .navbar-custom.is-fixed .nav li a {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .nav li a:hover,
-  .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
-  }
-  .navbar-custom.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-}
+
 .intro-header {
   background-color: #808080;
   background: no-repeat center center;
@@ -408,10 +368,64 @@ img::-moz-selection {
   border-radius: 50%;
 }
 .project-image {
-  height: 200px;
   width: 250px;
-  margin: 20px 0;
-  border-radius: 5%;
+  height: 200px;
+  border-radius: 0;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+
+}
+
+.projects {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+
+.project-text {
+  margin-left: 250px;
+}
+.project-container {
+  box-shadow: 0 4px 6px #e6e6e6;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+    transition-property: box-shadow, -webkit-box-shadow;
+    transition-duration: 0.5s, 0.5s;
+
+  min-width: 250px;
+  height: 600px;
+  border-radius: 0;
+}
+
+.project-container:hover {
+  box-shadow: 0 6px 8px #ccc;
+  cursor: pointer;
+}
+
+.project-header {
+  font-size: 30px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #999;
+  padding-left: 20px;
+  text-align: center;
+  margin: 30 20px;
+}
+
+.project-type {
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+
+.project-info {
+    height: 120px;
+}
+
+.remark {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -423,9 +437,6 @@ body {
 }
 
 .project-link {
-  margin-left: 20px;
-}
-
-.project-info {
-  margin-left: 20px;
+  font-weight: 400;
+  font-size: 12px;
 }
