@@ -124,7 +124,7 @@ hr.small {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 100px 0;
+    padding: 200px 0;
   }
 }
 .intro-header .site-heading,
@@ -236,7 +236,7 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  padding: 50px 0 65px;
+  padding: 0 0 10px;
 }
 footer .list-inline {
   margin: 0;
@@ -367,6 +367,21 @@ img::-moz-selection {
   width: 200px;
   border-radius: 50%;
 }
+
+.about-me {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.glyph-link {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.glyph-container {
+  margin-top: 50px;
+}
+
 .project-image {
   width: 250px;
   height: 200px;
@@ -383,6 +398,11 @@ img::-moz-selection {
   margin-top: 50px;
 }
 
+.projects-desc {
+  text-align: center;
+  margin: 10px 0;
+}
+
 .project-text {
   margin-left: 250px;
 }
@@ -393,7 +413,7 @@ img::-moz-selection {
     transition-duration: 0.5s, 0.5s;
 
   min-width: 250px;
-  height: 600px;
+  height: 500px;
   border-radius: 0;
 }
 
@@ -419,7 +439,7 @@ img::-moz-selection {
 }
 
 .project-info {
-    height: 120px;
+    height: 80px;
 }
 
 .remark {
@@ -434,6 +454,8 @@ body {
 
 .subheading {
   color: #999;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .project-link {
