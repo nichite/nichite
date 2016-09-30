@@ -33,20 +33,22 @@
 
 <body>
 
-    <!-- Navigation -->
-    <div class="container-fluid">
-      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Nicolas Hite</a>
-        </div>
-      </nav>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header navbar-custom">
+      <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#my-navbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="navbar-brand" href="index.html">Nicolas Hite</div>
     </div>
+    <div class="collapse navbar-toggleable-sm navbar-custom" id="my-navbar">
+      <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">Home</a></li> -->
+          <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nichite@gmail.com" target="_blank">Contact</a></li>
+          <li><a href="doc/Nicolas_Hite_Resume_2016.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </div>
+  </nav>
 
 
     <!-- Page Header -->
@@ -81,7 +83,7 @@
                             </a>
                             <a class="glyph-link" href="doc/Nicolas_Hite_Resume_2016.pdf" target="_blank">
                               <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-circle fa-stack-2x" title="View Resume"></i>
                                 <i class="fa fa-file fa-stack-1x fa-inverse"></i>
                               </span>
                             </a>

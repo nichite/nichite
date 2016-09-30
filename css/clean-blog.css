@@ -65,13 +65,11 @@ hr.small {
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-  opacity: 1;
+  color: rgba(255, 255, 255, 1);
 }
 .navbar-custom .navbar-brand {
   font-weight: 100;
   letter-spacing: 2px;
-  padding: 0;
   color: #999;
 }
 .navbar-custom .nav li a {
@@ -81,27 +79,33 @@ hr.small {
   letter-spacing: 2px;
 }
 
-
+nav.navbar-fixed-top {
+  background-color: white;
+  box-shadow: 0 0 4px #e6e6e6;
+}
 @media only screen and (min-width: 768px) {
   .navbar-custom {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom {
     color: #999;
-    padding: 10px 20px 10px 20px;
+
   }
 
+  .navbar-custom .navbar-brand:hover {
+    cursor: pointer;
+  }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
     color: rgba(50, 50, 50, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #999;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(50, 50, 50, 0.8);
   }
 }
 
@@ -220,6 +224,20 @@ hr.small {
     font-size: 36px;
   }
 }
+
+.navbar .container-fluid>.navbar-header {
+  float: left;
+  margin-right: 10px;
+}
+.navbar .navbar-nav {
+  float: left;
+  margin: 5px;
+}
+.nav>li {
+  float: left;
+  margin-top: -2px;
+}
+
 .section-heading {
   font-size: 36px;
   margin-top: 60px;
@@ -413,12 +431,12 @@ img::-moz-selection {
     transition-duration: 0.5s, 0.5s;
 
   min-width: 250px;
-  height: 500px;
+  height: 525px;
   border-radius: 0;
 }
 
 .project-container:hover {
-  box-shadow: 0 6px 8px #ccc;
+  box-shadow: 0 8px 10px #ccc;
   cursor: pointer;
 }
 
